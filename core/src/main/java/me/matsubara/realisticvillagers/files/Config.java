@@ -13,7 +13,6 @@ public enum Config {
     ATTACK_PLAYER_WEARING_MONSTER_SKULL("attack-player-wearing-monster-skull"),
     ATTACK_PLAYER_PLAYING_GOAT_HORN_SEEK("attack-player-playing-goat-horn-seek"),
     GOAT_HORN_SEEK_RANGE("goat-horn-seek-range"),
-    REQUIRE_ARROWS_FOR_PROJECTILE_WEAPON("require-arrows-for-projectile-weapon"),
     MELEE_ATTACK_COOLDOWN("melee-attack-cooldown"),
     VILLAGER_FIX_IRON_GOLEM_WITH_IRON("villager-fix-iron-golem-with-iron"),
     VILLAGER_FIX_IRON_GOLEM_COOLDOWN("villager-fix-iron-golem-cooldown"),
@@ -105,7 +104,13 @@ public enum Config {
     TAME_COOLDOWN("tame-cooldown"),
     MELEE_ATTACK_JUMP_CHANCE("melee-attack-jump-chance"),
     WHO_CAN_MODIFY_VILLAGER_INVENTORY("who-can-modify-villager-inventory"),
-    DISABLE_SPECIAL_PRICES_IF_ALLOWED_TO_MODIFY_INVENTORY("disable-special-prices-if-allowed-to-modify-inventory");
+    DISABLE_SPECIAL_PRICES_IF_ALLOWED_TO_MODIFY_INVENTORY("disable-special-prices-if-allowed-to-modify-inventory"),
+    MELEE_ATTACK_RANGE("melee-attack-range"),
+    DISABLE_VILLAGER_RIDING_NEARBY_BOAT("disable-villager-riding-nearby-boat"),
+    ACRONYM_SECOND("variable-text.acronym.second"),
+    ACRONYM_MINUTE("variable-text.acronym.minute"),
+    ACRONYM_HOUR("variable-text.acronym.hour"),
+    ACRONYM_DAY("variable-text.acronym.day");
 
     private final String path;
     private final RealisticVillagers plugin = JavaPlugin.getPlugin(RealisticVillagers.class);

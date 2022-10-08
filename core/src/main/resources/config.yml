@@ -57,9 +57,6 @@ villager-defend-family-member: true
 # If the villager must defend the hero of the village (only if the villager has a weapon).
 villager-defend-hero-of-the-village: true
 
-# Whether arrows should be required to use a bow/crossbow.
-require-arrows-for-projectile-weapon: true
-
 # If true, arrows shot by villagers will pass through other villagers.
 arrows-pass-through-other-villagers: true
 
@@ -208,6 +205,11 @@ villager-message-format: "%name%: %message%"
 
 # Texts that are used in some variables.
 variable-text:
+  acronym:
+    second: "s"
+    minute: "m"
+    hour: "h"
+    day: "d"
   none: "None"
   unknown: "Unknown"
   villager: "Villager"
@@ -676,7 +678,8 @@ default-wanted-items:
   - IRON_INGOT
 
 # Chance of jumping when attacking with a sword/axe (just to give more "realism").
-melee-attack-jump-chance: 0.35
+# NOTE: It's recommended to leave it at 0 so that villagers are not attacked when jumping (or use a lower value).
+melee-attack-jump-chance: 0.0
 
 # Who can modify the inventory of a villager.
 # Options: EVERYONE / FAMILY / NONE
@@ -688,3 +691,10 @@ who-can-modify-villager-inventory: NONE
 
 # Whether special prices are disabled when modifying the villager's inventory.
 disable-special-prices-if-allowed-to-modify-inventory: true
+
+# Here you can change the melee attack range.
+# NOTE: Avoid setting values greater than 4.
+melee-attack-range: 3.375
+
+# Here you can choose whether villagers can ride a ship when they are near it.
+disable-villager-riding-nearby-boat: false
